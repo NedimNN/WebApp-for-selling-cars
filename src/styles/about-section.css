@@ -1,0 +1,29 @@
+.section__item{
+    column-gap: 3rem;
+}
+.section__item p i{
+    color: #f9a826;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width:990px) {
+    .about__section-content h2{
+        font-size: 1.5rem;
+    }
+    .section__item{
+        column-gap: 3rem;
+    }
+    .section__item p{
+        font-size: 0.7rem;
+        margin-bottom: 0;
+    }
+    .section__description i{
+        font-size: 0.8rem !important;
+    }
+}
+@media only screen and (max-width:768px){
+    .about__img{
+        margin-top: 30px;
+    }
+}

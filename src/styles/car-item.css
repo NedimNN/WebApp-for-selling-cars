@@ -1,0 +1,61 @@
+.car__item{
+    border: 1px solid #7c8a9736;
+    padding: 20px;
+    border-radius: 5px;
+}
+.car__item span i{
+    color: #f9a826;
+    font-size: 1.1rem;
+}
+.car__img img{
+    height: 250px;
+    width: auto ;
+}
+.car__item-btn{
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background: #000d6b;
+    padding: 12px 0px;
+}
+.car__item-btn a{
+    text-decoration: none;
+}
+.car__btn-details{
+    background: #f9a826;
+    border-radius: 0px 5px 5px 0px;
+}
+.car__item-btn a:hover{
+    color: white;
+    transition: .3s;
+}
+.car__btn-details a{
+    color: #000d6b;
+}
+.car__btn-buy a {
+    color: #f9a826;
+}
+.car__btn-buy{
+    border-radius: 5px 0px 0px 5px;
+}
+@media only screen and (max-width:990px) {
+    .car__item h2{
+        font-size: 1rem;
+    }
+    .car__item h4{
+        font-size: 0.8rem;
+    }
+    .car__item h6{
+        font-size: 0.6rem;
+    }
+    .car__item-info span,span i {
+        font-size: 0.7rem;
+    }
+    .car__item-info span i {
+        font-size: 0.7rem;
+    }
+    .car__img img{
+        height: 90px;
+        width: auto ;
+    }
+}

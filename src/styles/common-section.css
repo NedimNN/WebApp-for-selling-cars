@@ -1,0 +1,10 @@
+
+
+.common__section{
+    background: linear-gradient(rgba(107, 82, 0, 0.384),rgba(107, 82, 0, 0.23)),
+    url("../assets/images/about-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px 0px;
+}

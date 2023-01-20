@@ -1,0 +1,30 @@
+.btn__buy{
+    background: #000d6b;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn__details{
+    background: #ff9d00;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.btn__buy a, .btn__buy span, .btn__details a, .btn__details span{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+.btn__buy:hover{
+    background-color:#2838b6 ;
+}
+.btn__details:hover{
+    background-color:#a37936 ;
+}
+.span__star{
+    color:#f9a826 ;
+}
