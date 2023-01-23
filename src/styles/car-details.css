@@ -28,3 +28,9 @@
 .span__star{
     color:#f9a826 ;
 }
+
+@media only screen and (max-width:320px){
+    .btn__buy span, .btn__details span{
+        font-size: 0.8rem;
+    }
+}

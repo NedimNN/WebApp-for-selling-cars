@@ -58,4 +58,10 @@
         height: 90px;
         width: auto ;
     }
+    .car__btn-details a{
+        font-size: 0.8rem;
+    }
+    .car__btn-buy a {
+        font-size: 0.8rem;
+    }
 }

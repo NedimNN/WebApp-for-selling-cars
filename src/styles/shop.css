@@ -1,0 +1,89 @@
+.cars__sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.sideBar-content{
+    width: 20%;
+    height: 100%;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.car-items{
+    width: 80%;
+    justify-content: space-around;
+}
+.filter__buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 7px;
+}
+.btn-apply{
+    background: #000d6b;
+    padding: 2px 15px;
+    border-radius: 3px;
+    color: white;
+    border: none;
+}
+.btn-reset{
+    background: #f9a826;
+    padding: 2px 15px;
+    border-radius: 3px;
+    color: white;
+    border: none;
+}
+.sidebar-sections{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.row span{
+    display: flex;
+    justify-content: space-between;
+}
+.sideBar-content .col{
+    width: 100%;
+}
+.col hr{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.col h2{
+    background: #000d6b;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3px;
+}
+
+
+
+
+
+@media only screen and (max-width : 1300px){
+    .sideBar-content{
+        width: 15%;
+
+    }
+    .car-items{
+        width: 90%;
+    }
+}
+@media only screen and (max-width : 1024px){
+    .sideBar-content{
+        margin: 0;
+    }
+    .filter__buttons{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .btn-reset{
+        margin-top: 3px;
+    }
+}
