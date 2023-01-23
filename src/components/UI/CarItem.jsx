@@ -15,9 +15,9 @@ const CarItem = (props) => {
             <img src={imgUrl} alt="" className='w-100' />
         </div>
         <div className="car__item-content mt-4">
-            <h2 className="section__title text-center">{brand} {carName}</h2>
-            <h4 className="section__title text-center">{model}</h4>
-            <h6 className="price text-center">Starts at ${price}</h6>
+            <h2 className="section__title text-center bg-white">{brand} {carName}</h2>
+            <h4 className="section__title text-center bg-white">{model}</h4>
+            <h6 className="price text-center bg-white">Starts at ${price}</h6>
 
             <div className="car__item-info d-flex align-items-center justify-content-between mt-3 mb-4">
                 <span className=' d-flex align-items-center gap-1'><i className="ri-car-line"></i> {condition} </span>

@@ -7,6 +7,8 @@ import img05 from "../images/cars-img/2021-audi-rs6-avant-110-1605052183.jpg";
 import img06 from "../images/cars-img/2018-mercedes-amg-gtr-hero-1559584200.jpg";
 import img07 from "../images/cars-img/2020-rolls-royce-wraith-101-1584549150.jpg";
 import img08 from "../images/cars-img/2023-porsche-911-gt3-rs-201-1660575621.jpg";
+import img09 from "../images/cars-img/2023-tesla-model-x-101-1671475309.jpeg";
+
 
 const carData = [
   {
@@ -152,6 +154,25 @@ const carData = [
     description:
       " Simply put, the 2023 Porsche 911 GT3 and the all-out track-attack GT3 RS are utterly transcendent, blending everything we love about the standard 911 with otherworldly performance, uncompromised driving enjoyment, and hot-lap capability. A naturally aspirated 4.0-liter flat-six engine makes demonic sounds as it howls up to its 9000 rpm redline, producing 502 horsepower along the way in the GT3 and GT3 Touring. That same engine is twisted to 518 horsepower in the new GT3 RS, but it’s that model’s wild race-car aerodynamic elements—ideas cribbed from GT and Formula 1 race cars—that comprise its major engineering advancements.",
   },
+  {
+    id: 9,
+    brand: "Tesla",
+    rating: 135,
+    carName: "Model X",
+    imgUrl: img09,
+    model: "Plaid model",
+    price: 111630,
+    year: 2023,
+    horsePower: 1020,
+    automatic: "Automatic",
+    condition: "New",
+    bodyType: "Sedan",
+    fuelType: "Electric",
+    description:
+      " The 2023 Model X offers the performance and cachet that comes with the Tesla brand name but its gimmicks aren’t as compelling these days. The luxury electric crossover segment has expanded and now includes better options. The performance-oriented Plaid model costs more but makes an astounding 1020 horsepower and still can go up to 333 miles between charges. We’re impressed by its brutal acceleration and great driving range.",
+  },
+  
+  
 ];
 
 export default carData;

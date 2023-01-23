@@ -5,14 +5,19 @@
     outline: none;
     border-radius: 5px;
 }
-.btn__details{
+.btn__details, .btn__exchange, .btn__compare{
     background: #ff9d00;
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 5px;
 }
-.btn__buy a, .btn__buy span, .btn__details a, .btn__details span{
+.left-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn__buy a, .btn__buy span, .btn__details a, .btn__details span, .btn__exchange span,.btn__exchange a,.btn__compare span,.btn__compare a{
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -25,9 +30,25 @@
 .btn__details:hover{
     background-color:#a37936 ;
 }
+.btn__exchange:hover{
+    background-color:#a37936 ;
+}
+.btn__compare:hover{
+    background-color:#a37936 ;
+}
 .span__star{
     color:#f9a826 ;
 }
+.similar-cars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h5 i{
+    font-size: 1.7rem;
+}
+
 
 @media only screen and (max-width:320px){
     .btn__buy span, .btn__details span{

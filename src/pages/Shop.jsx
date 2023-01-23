@@ -162,12 +162,6 @@ const Shop = () => {
           <span className='d-flex align-items-center gap-2'>
             <i className="ri-sort-desc"></i>
           </span>
-          {/* <select>
-            <option onClick={resetItems}>Sort by</option>
-            <option id='lowToHigh' value="low" ref={ref} onClick={sortItems}>Low to High</option>
-            <option id='highToLow' value="high" ref={ref} onClick={sortItems}>High to Low</option>
-          </select> */}
-
           <select value={selected} onChange={sortItems}>
             {
               options.map(option => (
