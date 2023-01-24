@@ -32,8 +32,8 @@ const Header = () => {
         <Col lg='6' md='6' sm='6'>
             <div className="header__top__left">
               
-            <Link to='#' className='login'> <i className="ri-login-circle-line"></i> Login </Link>
-            <Link to='#' className='register'> <i className="ri-user-3-line"></i> Register </Link>
+            <Link to='/login' className='login'> <i className="ri-login-circle-line"></i> Login </Link>
+            <Link to='/register' className='register'> <i className="ri-user-3-line"></i> Register </Link>
 
             </div>
           </Col>
@@ -107,6 +107,8 @@ const Header = () => {
                       navClass.isActive ? 'nav__active nav__item' : 'nav__item' }>{item.display}</NavLink>
                   ))
                 }
+                <NavLink to='/addvehicle' className={navClass=> 
+                      navClass.isActive ? 'nav__active nav__item' : 'nav__item' }> Add Vehicle</NavLink>
               </div>
             </div>
             <div className="nav__right__search">

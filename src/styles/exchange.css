@@ -1,0 +1,32 @@
+.form-exchange{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.form__row{
+    margin-left: 10%;
+}
+.form-exchange input {
+    width: 75%;
+}
+.form-exchange select {
+    width: 75%;
+}
+.form-exchange textarea{
+    height: 115px;
+    width: 75%;
+}
+.btn-container-exchange{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.date-container,.location-container,.name-container,.email-container,.brand-container,.state-container,.model-container,.year-container,.price-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+

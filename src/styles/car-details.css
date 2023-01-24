@@ -5,7 +5,7 @@
     outline: none;
     border-radius: 5px;
 }
-.btn__details, .btn__exchange, .btn__compare{
+.btn__details, .btn__exchange{
     background: #ff9d00;
     padding: 10px 20px;
     border: none;
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
 }
-.btn__buy a, .btn__buy span, .btn__details a, .btn__details span, .btn__exchange span,.btn__exchange a,.btn__compare span,.btn__compare a{
+.btn__buy a, .btn__buy span, .btn__details a, .btn__details span, .btn__exchange span,.btn__exchange a{
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
@@ -31,9 +31,6 @@
     background-color:#a37936 ;
 }
 .btn__exchange:hover{
-    background-color:#a37936 ;
-}
-.btn__compare:hover{
     background-color:#a37936 ;
 }
 .span__star{
