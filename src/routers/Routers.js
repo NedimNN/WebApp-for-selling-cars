@@ -11,11 +11,12 @@ import Exchange from '../pages/Exchange'
 import AddVehicle from '../pages/AddVehicle'
 import NotFound from "../pages/NotFound"
 
+
 const Routers = () => {
   return (
   <Routes>
     <Route path='/' element={<Navigate to='/home'/>}/>
-    <Route path='/home' element={<Home/>}/>
+    <Route path='/home' element={<Home/>} />
     <Route path='/about' element={<About/>}/>
     <Route path='/shop' element={<Shop/>}/>
     <Route path='/cars/:slug' element={<CarDetails/>}/>

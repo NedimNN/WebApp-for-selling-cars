@@ -6,11 +6,11 @@ import carData from '../assets/data/carData'
 import CarItem from '../components/UI/CarItem'
 import { Container, Row, Col } from 'reactstrap'
 import Testimonial from '../components/UI/Testimonial'
-
 const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+
   return (
           <Helmet title="Home">
             <section className="p-0 hero__slider-section">
@@ -46,7 +46,8 @@ const Home = () => {
                 </Row>
               </Container>
             </section>
-          </Helmet>
+
+          </Helmet>  
   )
 }
 

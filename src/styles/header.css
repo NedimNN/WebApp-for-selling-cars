@@ -53,121 +53,148 @@
 }
 
 /*--- middle ---*/
-.header__middle{
+.header__middle {
     padding: 20px 0px;
 }
-.logo h1 a span{
+
+.logo h1 a span {
     font-size: 1.5rem;
 }
-.linkToHome{
+
+.linkToHome {
     display: flex;
     align-items: center;
     column-gap: 3px;
 }
-.logoDiv{
+
+.logoDiv {
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
-.logo h1 a i{
+
+.logo h1 a i {
     font-size: 2.2rem;
-    color:#000d6b
+    color: #000d6b
 }
-.logo h1 a{
+
+.logo h1 a {
     text-decoration: none;
     color: #000d6b;
     font-weight: 500;
 }
-.logo h1{
+
+.logo h1 {
     line-height: 1.4rem;
 }
-.header__location, .header__time{
+
+.header__location,
+.header__time {
     display: flex;
     align-items: center;
     column-gap: 12px;
 }
-.header__time span i{
+
+.header__time span i {
     font-size: 2.2rem;
     color: #000d6b;
 }
-.header__time-content h4{
+
+.header__time-content h4 {
     font-size: 1.4rem;
     font-weight: 700;
     color: #000d6b;
 }
-.header__time-content h6{
+
+.header__time-content h6 {
     font-weight: 600;
 }
-.header__location span i{
+
+.header__location span i {
     font-size: 2.2rem;
     color: #000d6b;
 }
-.header__location-content h4{
+
+.header__location-content h4 {
     font-size: 1.4rem;
     font-weight: 700;
     color: #000d6b;
 }
-.header__location-content h6{
+
+.header__location-content h6 {
     font-weight: 600;
 }
-.btnDiv{
+
+.btnDiv {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.btn__cart{
+
+.btn__cart {
     background: #000d6b;
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 5px;
 }
-.btn__cart a, .btn__cart span{
+
+.btn__cart a,
+.btn__cart span {
     display: flex;
     align-items: center;
     column-gap: 0.5rem;
     color: #fff;
     text-decoration: none;
 }
-.btn__cart:hover{
-    background-color:#2838b6 ;
+
+.btn__cart:hover {
+    background-color: #2838b6;
 }
 
 /*--- navigation --- */
-.navigation__wrapper{
+.navigation__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header__navigation{
+
+.header__navigation {
     padding: 15px 0px;
-    background:#000d6b;
+    background: #000d6b;
 }
-.mobile__menu i{
+
+.mobile__menu i {
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
 }
-.mobile__menu{
+
+.mobile__menu {
     display: none;
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
     column-gap: 2.7rem;
 }
-.nav__item{
+
+.nav__item {
     color: #fff;
     text-decoration: none;
     transition: .3s;
 }
-.nav__item:hover{
+
+.nav__item:hover {
     color: #ffba42;
 }
-.nav__active{
+
+.nav__active {
     color: #ffba42;
 }
-.search__box{
+
+.search__box {
     border: 2px solid #fff;
     border-radius: 15px;
     padding: 7px 12px;
@@ -176,26 +203,46 @@
     column-gap: 7px;
     background: #000a52;
 }
-.search__box span i{
+
+.search__box span i {
     color: #fff;
     cursor: pointer;
 }
-.search__box input{
+
+.search__box input {
     background: transparent;
     border: none;
     outline: none;
     color: #fff;
     cursor: pointer;
 }
+
+.logout-btn {
+    background: #f9a826;
+    color: #000d6b;
+    height: 30px ;
+    padding: 3px;
+    border-radius: 7px;
+    border: none;
+}
+.logout-btn:hover{
+    background: #ffcd7c ;
+}
+
 @media only screen and (max-width:768px) {
-    .header__top,.header__middle,.nav__right{
+
+    .header__top,
+    .header__middle,
+    .nav__right {
         display: none;
     }
-    .mobile__menu{
+
+    .mobile__menu {
         display: block;
     }
-    .navigation{
-        background: rgb(0,13,107,0.6);
+
+    .navigation {
+        background: rgb(0, 13, 107, 0.6);
         width: 100%;
         height: 100%;
         position: fixed;
@@ -204,7 +251,8 @@
         z-index: 9999;
         display: none;
     }
-    .menu{
+
+    .menu {
         width: 250px;
         height: 100%;
         background: #fff;
@@ -214,12 +262,14 @@
         row-gap: 2rem;
         justify-content: center;
     }
-    .menu a{
+
+    .menu a {
         color: #000d6b;
         font-weight: 600;
         font-size: .9rem;
     }
-    .menu__active{
+
+    .menu__active {
         display: block;
     }
 

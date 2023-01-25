@@ -1,0 +1,37 @@
+.btn-delete, .btn-details{
+    padding: 12px 0px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.btn-details{
+    background: #ff9d00;
+    border-radius: 0px 5px 5px 0px;
+}
+.btn-details a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-delete{
+    background: red;
+    border-radius: 5px 0px 0px 5px;
+}
+.btn-delete span{
+    font-size: 0.9rem;
+    padding-left: 15px;
+}
+.btn-delete span i{
+    font-size: 1rem; 
+    color: white;
+}
+.btn-delete:hover{
+    background-color:rgb(163, 6, 6) ;
+
+}
+.btn-details:hover{
+    background-color:#a37936 ;
+}
+.btn-details a:hover{
+    color: #fff;
+}

@@ -29,10 +29,14 @@
     color: white;
     transition: .3s;
 }
+.car__item-btn span:hover{
+    color: white;
+    transition: .3s;
+}
 .car__btn-details a{
     color: #000d6b;
 }
-.car__btn-buy a {
+.car__btn-buy span {
     color: #f9a826;
 }
 .car__btn-buy{

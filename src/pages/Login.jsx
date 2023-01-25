@@ -10,23 +10,41 @@ import showPwdImg from '../assets/images/show-password.svg';
 import hidePwdImg from '../assets/images/hide-password.svg';
 import { NotificationContainer, NotificationManager } from 'react-notifications'
 import { Link } from 'react-router-dom'
+import userData from '../assets/data/userData'
 
+window.username = "";
 
 const Login = () => {
     const navigate = useNavigate();
     const [pwd, setPwd] = useState('');
+    const [username, setUsername] = useState('');
     const [isRevealPwd, setIsRevealPwd] = useState(false);
-
     const submitHandler = event => {
         event.preventDefault();
     }
     function successfulLogin() {
-        NotificationManager.success('Successfully logged in !', 'Welcome');
+        
+        userData.forEach((item) => {
+            if (pwd === item.password && username === item.userName) {
+                window.username = item.userName;
+            }
+        })
+        if (window.username === "") {
+            NotificationManager.warning('If you forgot your password try clicking the button under the form','Wrong username or password !', 3000);
+            setTimeout(() => {
+                NotificationManager.removeAll();
+            }, 3000);
+        }
+        else {
+            NotificationManager.success('Successfully logged in !', 'Welcome');
+            setTimeout(() => {
+                NotificationManager.removeAll();
+                navigate('/');
+            }, 3000);
 
-        setTimeout(() => {
-            NotificationManager.removeAll();
-            navigate('/home', { replace: true });
-        }, 3000);
+        }
+
+
     }
 
     return <Helmet title="Login">
@@ -38,7 +56,8 @@ const Login = () => {
                     <FormGroup>
                         <label className='section__title'>Username</label>
                         <div className='username-container'>
-                            <input id='username' type="text" placeholder='Username' />
+                            <input id='username' type="text" placeholder='Username'
+                                value={username} onChange={e => setUsername(e.target.value)} />
 
                         </div>
                     </FormGroup>

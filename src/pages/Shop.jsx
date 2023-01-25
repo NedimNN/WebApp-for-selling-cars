@@ -175,7 +175,7 @@ const Shop = () => {
 
         </div>
       </Col>
-      <div className='cars__sidebar'> {/* maybe put a row here  */}
+      <div className='cars__sidebar'>
         <div className='sideBar-content'>
           <Col>
             <Col>
