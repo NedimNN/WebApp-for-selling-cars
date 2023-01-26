@@ -1,0 +1,16 @@
+.table-out{
+    border:  3px solid;
+    border-radius: 15px;
+    border: 3px solid #000d6b;
+    padding: 7px;
+    margin-bottom: 55px;
+}
+.table-in{
+    border: #ff9d00 3px solid;
+    border-radius: 15px;
+    padding: 10px;
+}
+.table-parent {
+    overflow: hidden;
+    border-radius: 15px;
+}

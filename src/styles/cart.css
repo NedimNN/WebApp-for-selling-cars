@@ -1,3 +1,37 @@
+.checkout-container-orange{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    border: #ff9d00 3px solid;
+    border-radius: 15px;
+    padding: 3px;
+
+}
+.checkout-container-blue{
+    border:  3px solid;
+    border-radius: 15px;
+    border: 3px solid #000d6b;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
+}
+.checkout-btn a{
+    text-decoration: none;
+    color: white;
+}
+.checkout-btn a:hover{
+    color: white;
+}
+#checkout{
+    background: #ff9d00;
+}
+#checkout:hover{
+    background-color: #a37936;
+}
+
 .btn-delete, .btn-details{
     padding: 12px 0px;
     border: none;

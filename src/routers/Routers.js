@@ -10,6 +10,8 @@ import Register from '../pages/Register'
 import Exchange from '../pages/Exchange'
 import AddVehicle from '../pages/AddVehicle'
 import NotFound from "../pages/NotFound"
+import Checkout from '../pages/Checkout'
+import Reservations from '../pages/Reservations'
 
 
 const Routers = () => {
@@ -25,6 +27,8 @@ const Routers = () => {
     <Route path='/register' element={<Register/>}/>
     <Route path='/exchange' element={<Exchange/>}/>
     <Route path='/addvehicle' element={<AddVehicle/>}/>
+    <Route path='/checkout' element={<Checkout/>}/>
+    <Route path='/reservations' element={<Reservations/>}/>
     <Route path='*' element={<NotFound/>}/>
   </Routes>
   );

@@ -17,6 +17,7 @@ const Cart = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [carsInCart, setCarsInCart] = useState(null);
+  const [total, setTotal] = useState(0);
   if (location.pathname === "/cart" && window.username !== "") {
     if (user == null) {
       userData.forEach((element) => {
@@ -27,22 +28,30 @@ const Cart = () => {
     }
   }
   var add = [];
+  var sumTotal = 0;
   if (window.cart.length > 0 && user != null && carsInCart === null) {
     window.cart.forEach((element) => {
       add.push(element);
+      sumTotal += element.price;
     })
   }
-  if (add.length > 0) {
+  if (add.length > 0 && sumTotal > 0) {
     setCarsInCart(add);
+    setTotal(sumTotal);
   }
   function deleteItem(id) {
     var clean = [];
+    sumTotal = total;
     carsInCart.forEach(element => {
       if (element.id !== id) {
         clean.push(element);
       }
+      else {
+        sumTotal -= element.price;
+      }
     });
     setCarsInCart(clean);
+    setTotal(sumTotal);
     window.cart = clean;
     clean = [];
     if (window.cart.length === 0) {
@@ -51,13 +60,26 @@ const Cart = () => {
         NotificationManager.removeAll();
         navigate('/shop');
       }, 3000);
-
     }
   }
 
   return <Helmet title='Cart'>
     <CommonSection title='Your cart' />
     <Container className='cart_row'>
+      {carsInCart != null && total > 0 &&
+        <div className='checkout-container-blue  mb-5'>
+          <div className='checkout-container-orange'>
+            <h2 className=''> Total for {carsInCart.length} cars in cart is ${total} </h2>
+            <button className='btn btn-warning' id='checkout' >
+              <div className='checkout-btn'>
+                <Link to='/checkout' state={total}>
+                  <span className='d-flex flex-row align-items-center gap-2'>Checkout <i className="ri-check-double-fill"></i></span>
+                </Link>
+              </div>
+            </button>
+          </div>
+        </div>
+      }
       <Row className='align-items-center justify-content-center'>
         {carsInCart != null &&
           carsInCart.map(e => (

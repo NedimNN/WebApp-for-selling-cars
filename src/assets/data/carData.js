@@ -169,7 +169,7 @@ const carData = [
     bodyType: "Sedan",
     fuelType: "Electric",
     description:
-      " The 2023 Model X offers the performance and cachet that comes with the Tesla brand name but its gimmicks aren’t as compelling these days. The luxury electric crossover segment has expanded and now includes better options. The performance-oriented Plaid model costs more but makes an astounding 1020 horsepower and still can go up to 333 miles between charges. We’re impressed by its brutal acceleration and great driving range.",
+      " The 2023 Model X offers the performance and cachet that comes with the Tesla brand name and its gimmicks are as compelling as ever. The luxury electric crossover segment has expanded and now includes better options. The performance-oriented Plaid model costs more but makes an astounding 1020 horsepower and still can go up to 333 miles between charges. We’re impressed by its brutal acceleration and great driving range.",
   },
   
   

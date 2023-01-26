@@ -142,6 +142,10 @@ const Header = () => {
                 <NavLink to='/addvehicle' className={navClass =>
                   navClass.isActive ? 'nav__active nav__item' : 'nav__item'}> Add Vehicle</NavLink>
               }
+              {user !== null && user.role === "employee" &&
+                <NavLink to='/reservations' className={navClass =>
+                  navClass.isActive ? 'nav__active nav__item' : 'nav__item'}> Reservations</NavLink>
+              }
 
             </div>
           </div>

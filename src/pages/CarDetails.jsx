@@ -100,7 +100,7 @@ const CarDetails = () => {
               </div>
 
               <div className='d-flex align-items-center gap-5 mb-3 mt-3'>
-                <h6 className='price fw-bold fs-5'>Starts at ${singleCar.price}</h6>
+                <h6 className='price fw-bold fs-5 mb-0'>Starts at ${singleCar.price}</h6>
                 <span className='d-flex align-items-center gap-2'>
                   <span className='span__star' >
                     <i className="ri-star-s-fill"></i>
