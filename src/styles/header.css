@@ -208,6 +208,10 @@
     color: #fff;
     cursor: pointer;
 }
+.search-btn{
+    border: 0;
+    background-color: #000a52;
+}
 
 .search__box input {
     background: transparent;

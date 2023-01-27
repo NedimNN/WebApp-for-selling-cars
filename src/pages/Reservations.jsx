@@ -93,10 +93,10 @@ const Reservations = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                        res.map((item => {
+                                        res.map(((item,index) => {
                                             return <tr key={item.id}>
                                                 <td >
-                                                    <span >{item.id}</span>
+                                                    <span >{index+1}</span>
                                                 </td>
                                                 <td >
                                                     <span >{item.firstLastName}</span>

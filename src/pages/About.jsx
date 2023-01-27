@@ -23,9 +23,7 @@ const About = () => {
             <div className='about__page-content'>
               <h2 className="section__title">We are commited to ensure that buying cars becomes as easiest as possible</h2>
               <p className='section__description'>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur error, magnam,
-                quo sint eos hic cumque autem veritatis laudantium cupiditate voluptatibus aperiam facere,
-                at eius. Suscipit maxime consequatur consequuntur esse.
+              We know that buying a car can sometimes be an inconvenience, so we'd like to welcome you to our website where everything you need for buying a car is here, and if you need assistance you can always give us a call.
               </p>
               <div className='d-flex align-items-center gap-3 mt-4'>
                 <span className='fs-4'><i className="ri-phone-fill"></i></span>

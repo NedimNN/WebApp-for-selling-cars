@@ -22,6 +22,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 25px;
 }
 .date-container,.location-container,.name-container,.email-container,.brand-container,.state-container,.model-container,.year-container,.price-container{
     display: flex;

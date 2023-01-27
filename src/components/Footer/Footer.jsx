@@ -28,7 +28,7 @@ const Footer = () => {
             </h1>
           </div>
           <p className="footer__logo-content">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci exercitationem, facilis necessitatibus, fuga cupiditate recusandae obcaecati alias repellat, nam sequi distinctio ipsa itaque cumque tenetur deserunt dolor! Neque, id nobis.
+          We are commited to ensure that buying cars becomes as easiest as possible, so we'd like to welcome you to our website where everything you need for buying a car is here, from exchanging your old car for a new one , to just browsing good vehicles.
           </p>
         </Col>
         <Col lg='2' md='5' sm='6'>

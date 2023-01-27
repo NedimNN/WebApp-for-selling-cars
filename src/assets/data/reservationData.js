@@ -33,6 +33,41 @@ const reservationData = [
         dateOfInspection: "May 15, 2022 ",
         brandModelYear: "Tesla Model X Plaid 2021",
         status: false,
+    },
+    {
+        id: 6,
+        firstLastName: "Will Smith",
+        dateOfInspection: "April 12, 2022 ",
+        brandModelYear: "Porsche Panamera 2021",
+        status: true,
+    },
+    {
+        id: 7,
+        firstLastName: "Jennifer McAlister",
+        dateOfInspection: "April 11, 2022 ",
+        brandModelYear: "Nissan Altima 2015",
+        status: false,
+    },
+    {
+        id: 8,
+        firstLastName: "Tyson Fury",
+        dateOfInspection: "April 5, 2022 ",
+        brandModelYear: "Rolls-Royce Ghost 2022",
+        status: true,
+    },
+    {
+        id: 9,
+        firstLastName: "Carl Goode",
+        dateOfInspection: "March 22, 2022 ",
+        brandModelYear: "Mitsubishi ECLIPSE 2011",
+        status: true,
+    },
+    {
+        id: 10,
+        firstLastName: "Rachelle Colbert",
+        dateOfInspection: "March 12, 2022 ",
+        brandModelYear: "Ducati DIAVEL CROMO 2012",
+        status: true,
     }
 ];
 export default reservationData;

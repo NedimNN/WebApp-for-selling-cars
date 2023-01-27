@@ -18,3 +18,15 @@
     flex-direction: column;
     align-items: flex-start;
 }
+.form-out{
+    border:  3px solid;
+    border-radius: 15px;
+    border: 3px solid #000d6b;
+    padding: 7px;
+    margin-bottom: 55px;
+}
+.form-in{
+    border: #ff9d00 3px solid;
+    border-radius: 15px;
+    padding: 10px;
+}

@@ -5,9 +5,10 @@ import { useLocation } from 'react-router-dom';
 import "../../styles/header.css";
 import { useState } from 'react';
 import userData from '../../assets/data/userData';
+import { useNavigate } from 'react-router-dom';
 import { NotificationContainer, NotificationManager } from 'react-notifications'
 
-
+window.search = "";
 const navigationLinks = [
   {
     path: '/home',
@@ -25,7 +26,7 @@ const navigationLinks = [
 
 const Header = () => {
   const location = useLocation();
-
+  const navigate = useNavigate();
   const [user, setUser] = useState(null);
   if (location.pathname === "/home" && window.username !== "") {
     if (user == null) {
@@ -36,6 +37,7 @@ const Header = () => {
       })
     }
   }
+
   function logOut() {
     window.username = "";
     window.cart = [];
@@ -44,6 +46,16 @@ const Header = () => {
     setTimeout(() => {
       NotificationManager.removeAll();
     }, 3000);
+  }
+const handelKeyDown = event =>{
+  if(event.key === "Enter"){
+      setSearch();
+  }
+}
+  function setSearch(){
+    setTimeout(() => {
+      navigate('/shop');
+    }, 200);
   }
   const menuRef = useRef(null);
   const toggleMenu = () => menuRef.current.classList.toggle('menu__active');
@@ -151,9 +163,12 @@ const Header = () => {
           </div>
           <div className="nav__right__search">
             <div className="search__box">
-              <span><i className="ri-search-2-line"></i></span>
-              <input type="text" placeholder="Search" />
+              <input onChange={e => window.search = e.target.value} onKeyDown={handelKeyDown} type="text" placeholder="Search" />
+              <button className='search-btn' onClick={setSearch}>
+                <span><i className="ri-search-2-line border border-warning border-3 p-1 rounded"></i></span>
+              </button>
             </div>
+
           </div>
         </div>
       </Container>

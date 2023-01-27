@@ -5,6 +5,7 @@ import Helmet from '../components/Helmet/Helmet'
 import CarItem from '../components/UI/CarItem'
 import CommonSection from '../components/UI/CommonSection'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 import '../styles/shop.css'
 
@@ -14,11 +15,12 @@ const Shop = () => {
     {value:'low', text:'Low to High'},
     {value:'high', text:'High to Low'}
   ];
+  const location = useLocation();
   const [selected,setSelected] = useState(options[0].value);
-
   const [carsToLoad, setCarsToLoad] = useState(
     carData
   );
+  const [s,setS] = useState("");
   const [condiCheckedState, setCondiCheckedState] = useState(
     new Array(2).fill(false)
   );
@@ -34,6 +36,34 @@ const Shop = () => {
   const [yearCheckedState, setyearCheckedState] = useState(
     new Array(4).fill(false)
   );
+  if(window.search === "" && s === "stop"){
+    setCarsToLoad(carData);
+    setS("empty");
+  }
+  if(window.search === "" && s === "" && s !== "stop"){
+    setCarsToLoad(carData);
+    setS("empty");
+  }
+  if(window.search !== "" && s !== "go" && s !== "stop" ){
+    setS("go");
+  }
+  if(window.search !== "" && s === "go" && location.pathname === "/shop" && s !== "stop" ){
+    var searched = [];
+    carData.forEach((item)=> {
+      if(item.brand.toLocaleLowerCase().includes(window.search) ||
+      item.model.toLocaleLowerCase().includes(window.search) ||
+      item.fuelType.toLocaleLowerCase().includes(window.search) ||
+      item.bodyType.toLocaleLowerCase().includes(window.search) ||
+      item.carName.toLocaleLowerCase().includes(window.search)){
+        searched.push(item);
+      }
+    })
+    if(searched.length > 0){
+      setCarsToLoad(searched);
+      setS("stop");
+    }
+  }
+
 
   function handleChange(checkedState, setCheckedState, x) {
     const updateCheckedState = checkedState.map((item, index) =>
